@@ -72,8 +72,22 @@ Sintomo: un modulo importato (`colored`) stampa da un file **vecchio** che non e
 from UFZ.utili_funzioni.colored2gpt.colored2gpt01 import colored
 import sys
 
-print("Modulo:", colored.__module__)
-print("File:", sys.modules[colored.__module__].__file__)
+print(colored("Testo colorato", "black", "on_red", ["bold", "underline"]))
+print("\n--- DEBUG ORIGINE FUNZIONE 'colored' ---")
+
+# Stampa il nome del modulo da cui la funzione è importata
+print("Modulo dichiarato:", colored.__module__)
+
+# Cerca nel sys.modules il modulo da cui è stata importata
+modulo_origine = sys.modules.get(colored.__module__)
+
+# Stampa il file fisico se esiste
+if modulo_origine:
+    print("File effettivo del modulo:", getattr(modulo_origine, '__file__', '❌ Modulo non trovato su disco'))
+else:
+    print("❌ Modulo non presente in sys.modules")
+
+print("--- FINE DEBUG ---\n")
 ```
 
 ### ✅ Eliminare interferenze di `PYTHONPATH`
