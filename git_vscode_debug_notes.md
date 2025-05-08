@@ -39,6 +39,7 @@ git branch nome_del_branch
 git branch
 git checkout nome_del_branch
 git push -u origin nome_del_branch
+git branch -r
 ```
 
 ### 📂 Ignorare file inutili
