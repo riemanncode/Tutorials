@@ -20,8 +20,8 @@ rmdir /s /q .git
 cd c:\path\del\tuo\progetto
 git clone https://github.com/tuo_username/NOME_REPO.git
 cd NOME_REPO
-python -m venv _venv
-_venv\Scripts\activate
+python -m venv _venv 
+cd _venv\Scripts\activate
 pip install -r requirements.txt
 code .
 ```
