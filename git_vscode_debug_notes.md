@@ -2,7 +2,7 @@
 
 ## 🔧 Sezione 1 — Gestione Git
 
-### 🧱 Comandi base per inizializzare e collegare il progetto
+### ▶️ CASO 1: Parti da una cartella locale (progetto già esistente)
 
 ```bash
 git init
@@ -11,6 +11,22 @@ git add .
 git commit -m "Primo commit"
 git push -u origin master
 ```
+
+### ▶️ CASO 2: Parti da GitHub e vuoi clonare il progetto
+```bash
+git init
+git remote add origin https://github.com/tuo_username/NOME_REPO.git
+git add .
+git commit -m "Primo commit"
+git push -u origin master
+```
+Dopo il clone:
+```bash
+git add .
+git commit -m "Modifiche"
+git push
+```
+
 
 ### 📂 Ignorare file inutili
 
