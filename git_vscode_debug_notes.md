@@ -7,6 +7,8 @@
 ```bash
 git init
 git remote add origin https://github.com/tuo_username/NOME_REPO.git
+git remote -v
+git remote show origin
 git add .
 git commit -m "Primo commit"
 git push -u origin master
@@ -14,11 +16,14 @@ git push -u origin master
 
 ### ▶️ CASO 2: Parti da GitHub e vuoi clonare il progetto
 ```bash
-git init
-git remote add origin https://github.com/tuo_username/NOME_REPO.git
-git add .
-git commit -m "Primo commit"
-git push -u origin master
+rmdir /s /q .git
+cd c:\path\del\tuo\progetto
+git clone https://github.com/tuo_username/NOME_REPO.git
+cd NOME_REPO
+python -m venv _venv
+_venv\Scripts\activate
+pip install -r requirements.txt
+code .
 ```
 Dopo il clone:
 ```bash
