@@ -2,6 +2,11 @@
 
 ## 🔧 Sezione 1 — Gestione Git
 
+### COMANDI BASE UTILI
+```bash
+git log --oneline --graph --decorate --all
+```
+
 ### ▶️ CASO 1: Parti da una cartella locale (progetto già esistente)
 
 ```bash
