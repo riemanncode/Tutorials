@@ -4,7 +4,7 @@
 
 ### COMANDI BASE UTILI
 ```bash
-git log --oneline --graph --decorate --all
+git log --oneline --graph --decorate --all    # per vedere il percorso grafico del developement
 git fetch     # per aggiornare i branch fatti nella IDE (se non li legge)
 ```
 
