@@ -9,7 +9,7 @@ git log --oneline
 git fetch     # per aggiornare i branch fatti nella IDE (se non li legge)
 ```
 
-### PER DOWNLOADARE PERFETTAMENTE E SINCRONIZZARE IL MIO COMPUTER CON IL BRANCH DI RIFERIMENTO
+### PER DOWNLOADARE PERFETTAMENTE E SINCRONIZZARE IL MIO PROGETTO CON IL BRANCH DI RIFERIMENTO
 ```bash
 git fetch origin
 git checkout _dev
