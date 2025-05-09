@@ -9,6 +9,35 @@ git log --oneline
 git fetch     # per aggiornare i branch fatti nella IDE (se non li legge)
 ```
 
+### PER UPLOADARE PERFETTAMENTE E SINCRONIZZARE IL MIO COMPUTER CON IL BRANCH DI RIFERIMENTO
+```bash
+git fetch origin
+git checkout _dev
+git reset --hard origin/_dev
+git clean -fdx
+```
+
+### CHERRY PICKING
+```bash
+git branch
+git checkout nome_del_branch
+git cherry-pick 123456abc
+
+echo per tornare indietro e cancellare cherry pick dal branch (locale)
+git reset --hard HEAD~1
+
+echo per pusharlo su github in remoto
+git push
+
+echo comando per cancellare il push che è stato fatto in remoto
+git push origin HEAD~1:_dev --force
+
+echo comando per ri-allineare il locale con quello che c'è in remoto
+git fethc origin
+git reset --hard origin/dev
+```
+
+
 ### ▶️ CASO 1: Parti da una cartella locale (progetto già esistente)
 
 ```bash
