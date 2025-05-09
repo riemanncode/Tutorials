@@ -5,6 +5,7 @@
 ### COMANDI BASE UTILI
 ```bash
 git log --oneline --graph --decorate --all
+git fetch     # per aggiornare i branch fatti nella IDE (se non li legge)
 ```
 
 ### ▶️ CASO 1: Parti da una cartella locale (progetto già esistente)
