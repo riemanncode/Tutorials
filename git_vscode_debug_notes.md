@@ -37,6 +37,17 @@ git fethc origin
 git reset --hard origin/dev
 ```
 
+### ATTIVARE VENV IN AUTOMATICO DENTRO VSCODE
+Allora dentro la Root del mio progetto ad esempio D:\CODING\VS_CODE\MyPythonProject\
+devo creare la cartella la cartella .vscode\ e poi dentro il file .vscode\settings.json,
+dentro questo file devo mettere:
+```bash
+ {
+  "python.terminal.activateEnvironment": true
+}
+```
+ogni volta che aprirò VSCODE mi attiverà in automatico il mio venv.
+
 
 ### ▶️ CASO 1: Parti da una cartella locale (progetto già esistente)
 
