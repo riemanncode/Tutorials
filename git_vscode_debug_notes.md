@@ -13,6 +13,7 @@ git fetch     # per aggiornare i branch fatti nella IDE (se non li legge)
 ```bash
 git fetch origin
 git checkout _dev
+## git stash push --include-untracked -m "stash temporaneo prima di switch" # necessario a volte quando non riesco a switchare branch
 git reset --hard origin/_dev
 git clean -fdx
 ```
