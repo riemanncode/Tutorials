@@ -15,7 +15,8 @@ git fetch origin
 git checkout _dev
 ## git stash push --include-untracked -m "stash temporaneo prima di switch" # necessario a volte quando non riesco a switchare branch
 git reset --hard origin/_dev
-git clean -fdx
+git clean -fd
+echo git clean -fdx cancella tutto
 ```
 
 ### CHERRY PICKING
