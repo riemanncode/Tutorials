@@ -19,6 +19,12 @@ git clean -fd
 echo git clean -fdx cancella tutto
 ```
 
+### PER SCARICARE UN MODULO CHE MI SERVE ALL'INTERNO DI UN PROGETTO GIà ESISTENTE
+```bash
+echo installa il package GUI_for_CFDxx nella cartella --> __misc/GUI_FLASK
+git submodule add https://github.com/riemanncode/GUI_for_CFDxx.git __misc/GUI_FLASK
+```
+
 ### CHERRY PICKING
 ```bash
 git branch
