@@ -4,6 +4,7 @@ from pathlib import Path
 
 venv_root = os.environ.get('VIRTUAL_ENV', '')
 # Mantieni solo i path che stanno dentro il tuo venv attivo o nella directory corrente
+# queste riga qua sotto è da includere/escludere per fare degli esperimenti sul codice
 sys.path = [p for p in sys.path if venv_root in p or p.startswith(os.getcwd())]
 print("sys.path pulito:")
 for p in sys.path:
